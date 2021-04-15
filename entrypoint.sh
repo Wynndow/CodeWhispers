@@ -2,7 +2,7 @@
 
 npm install
 mkdir git-master
-cp -R ./initialGit-JavaScript/. ./git-master
+cp -R ./initialGit-Java/. ./git-master
 cd git-master
 chmod 755 reconnect.sh
 git init

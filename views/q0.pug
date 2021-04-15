@@ -8,19 +8,21 @@ p
 p
   a(href="/teamPack/setup-whisper.sh") Mac Linux Unix
 
-p It is expected that ruby and git are available from your command line
+p It is expected that Java 11 and git are available from your command line
 
 p Give run permissions to the downloaded script
 
 p To get setup run #[code #{"sh setup-whisper.sh ~YourTeamName~"}]
 
-p #[code cd] into the new folder called #[code ~YourTeamName~]
+p #[code cd] into the new folder called #[code ~YourTeamName~/whisper]
 
-p Run #[code #{"npm start"}] to try to answer all questions from the server
+p You need to edit Whisper.java #[code #{"src/main/java/whisper"}] to solve the question.
 
-p Run #[code #{"./reconnect.sh"}] when I tell you to pick up your new branch
+p Run #[code #{"./gradlew run"}] to try your answer against input provided by the server.
 
 p When you are happy that you have fully answered a question... make sure to commit and push you code to my git server.
+
+p Run #[code #{"./gradlew reconnect"}] when I tell you to pick up your new branch (after everyone is finished).
 
 h3 Git ground rules for this experiment... Do not make any new branches!!! Do not stash!!! Only do basic git add + commit + push
 

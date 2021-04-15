@@ -6,3 +6,4 @@ initialGit/out/
 .vagrant/
 builtAssets/
 *.log
+.idea

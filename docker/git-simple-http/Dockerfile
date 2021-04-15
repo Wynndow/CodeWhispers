@@ -2,7 +2,7 @@ FROM nginx:1.13.5-alpine
 
 RUN set -x && \
   apk --update upgrade                                  &&  \
-  apk add git fcgiwrap spawn-fcgi                       &&  \
+  apk add git fcgiwrap spawn-fcgi bash wget             &&  \
   adduser git -h /var/lib/git -D                        &&  \
   adduser nginx git                                     &&  \
   git config --system http.receivepack true             &&  \
